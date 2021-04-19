@@ -1,0 +1,17 @@
+.vs/
+/packages/
+/ASPWebApplication1/
+/ASPWebApplication1.Tests/
+*.cache
+*.targets
+*.RazorAssemblyInfo.cs
+*.pdb
+*.sln
+*.dll
+*.exe
+*.csproj
+LICENSE.*
+/WebApplication1/wwwroot
+*.g.cs
+ASPWebApplication1.Tests/obj/Release/*
+WebApplication1/bin/Debug/*
