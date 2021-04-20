@@ -5,6 +5,10 @@
 *.cache
 *.targets
 *.RazorAssemblyInfo.cs
+*.AssemblyInfo.cs
+*.RazorTargetAssemblyInfo.cs
+*.RazorTargetAssemblyInfo.cs
+*.MvcApplicationPartsAssemblyInfo.cs
 *.pdb
 *.sln
 *.dll
@@ -14,4 +18,5 @@ LICENSE.*
 /WebApplication1/wwwroot
 *.g.cs
 ASPWebApplication1.Tests/obj/Release/*
-WebApplication1/bin/Debug/*
+/WebApplication1/bin/*
+/WebApplication1/obj/*

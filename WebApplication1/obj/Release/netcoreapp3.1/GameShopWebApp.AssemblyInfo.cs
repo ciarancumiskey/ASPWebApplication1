@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-WebApplication1-1FA2BCB2-C8B9-4A6A-AE30-3C3D6D89F485")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameShopWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
