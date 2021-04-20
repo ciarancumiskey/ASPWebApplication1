@@ -7,22 +7,16 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Add a new</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.GameName)
+                Title
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.GamePlatform)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GamePrice)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GameDescription)
+                Platform
             </th>
             <th></th>
         </tr>
@@ -37,14 +31,8 @@
                 @Html.DisplayFor(modelItem => item.GamePlatform)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.GamePrice)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GameDescription)
-            </td>
-            <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Further details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>

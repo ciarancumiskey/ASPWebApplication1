@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using WebApplication1.Data;
 using WebApplication1.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GameShopWebApp.Controllers
 {
@@ -55,6 +56,7 @@ namespace GameShopWebApp.Controllers
         }
 
         // GET: Games/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
