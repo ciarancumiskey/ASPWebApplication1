@@ -25,6 +25,17 @@ namespace GameShopWebApp.Controllers
             return View(await _context.Game.ToListAsync());
         }
 
+        //GET: Games/ShowSearchForm
+        public async Task<IActionResult> ShowSearchForm()
+        {
+            return View();
+        }
+        //GET: Games/ShowSearchResults
+        public async Task<IActionResult> ShowSearchResults(String SearchQuery)
+        {
+            //Check if either the game's name or description tags contain the user's query
+            return View("Index", await _context.Game.Where( q => q.GameName.Contains(SearchQuery) || q.GameDescription.Contains(SearchQuery)).ToListAsync());
+        }
         // GET: Games/Details/5
         public async Task<IActionResult> Details(int? id)
         {
